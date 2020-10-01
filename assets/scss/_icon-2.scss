@@ -1,0 +1,46 @@
+/*
+Flaticon icon font: Flaticon
+Creation date: 02/08/2019 13:38
+*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/icon-2/Flaticon.eot");
+  src: url("../fonts/icon-2/Flaticon.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/icon-2/Flaticon.woff2") format("woff2"),
+  url("../fonts/icon-2/Flaticon.woff") format("woff"),
+  url("../fonts/icon-2/Flaticon.ttf") format("truetype"),
+  url("../fonts/icon-2/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/icon-2/Flaticon.svg") format("svg");
+  }
+}
+
+.fi:before{
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon-bed-1:before { content: "\f100"; }
+.flaticon-bed:before { content: "\f101"; }
+.flaticon-mattress:before { content: "\f102"; }
+
+$font-Flaticon-bed-1: "\f100";
+$font-Flaticon-bed: "\f101";
+$font-Flaticon-mattress: "\f102";

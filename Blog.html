@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title> وبلاگ  </title>
+    <link rel="shortcut icon" href="assets/img/logo-title.png">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/video/video-js.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="blog">
+    <section class="header-blog">
+      <div class="grid container p-0 d-flex flex-wrap-reverse justify-content-between">
+          <div class="col-lg-auto col-md-6 col-12">
+              <div class="filter">
+            <span class="title">
+              فیلتر:
+
+            </span>
+                  <ul class="nav btn-group">
+                      <li class="category-button2 active-model" data-filter="one">
+                          همه مقالات
+                      </li>
+                      <li class="category-button2" data-filter="two">
+                         استارت آپ
+                      </li>
+                      <li class="category-button2" data-filter="three">
+                          کار
+                      </li>
+                      <li class="category-button2" data-filter="four">
+                          سفر
+                      </li>
+                      <li class="category-button2" data-filter="five">
+                          محل
+                      </li>
+                  </ul>
+              </div>
+      </div>
+          <div class="col-lg-auto col-md-6 col-12">
+              <form onsubmit="submitFn(this, event);">
+                  <div class="search-wrapper">
+                      <div class="input-holder">
+                          <input type="text" class="search-input" placeholder="جستجوی همه مقالات . ." />
+                          <button class="search-icon" onclick="searchToggle(this, event);">
+                              <span></span>
+                          </button>
+                      </div>
+                      <span class="close" onclick="searchToggle(this, event);"></span>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </section>
+    <section class="content-blog">
+        <div class="container p-0 d-flex flex-wrap justify-content-between">
+            <div class="col-lg-auto col-md-6 col-12 p-0">
+                <div class="big-box">
+                    <div class="header-box">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    استارت آپ ,
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    کار ,
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    سفر ,
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    کار
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="middle-box">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <h3 class="title">
+                                پیوست شده: قالب مهم و استاندارد پست
+                            </h3>
+                            <span class="text">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. .
+                    </span>
+                        </div>
+                        <img src="assets/img/img-blog-details-2.png" alt="">
+                    </div>
+                    <div class="data-box">
+                    <span class="data">
+                      12 اسفند 1397
+                    </span>
+                        <span class="comment">
+                        6 <i class="icon-bubble2"></i>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-auto col-md-6 col-12 p-0">
+                <div class="little-box video-box">
+                    <div class="header-box">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    سفر ,
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    کار
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="middle-box">
+                        <h3 class="title">
+                            ارسال ساده با تصویر ویژه برای نشان دادن اینجا
+                        </h3>
+                        <span class="text">
+                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و  صنعت چاپ  صنعت چاپ  صنعت چاپ      با استفاده از طراحان گرافیک است.
+                    </span>
+                        <img src="assets/img/img-blog-details-2.png" alt="">
+                    </div>
+                    <div class="data-box">
+                    <span class="data">
+                        8 اسفند 1397
+                    </span>
+                        <span class="comment">
+                        6 <i class="icon-bubble2"></i>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-auto col-md-6 col-12 p-0">
+                <div class="little-box video-box">
+                    <div class="header-box">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    سفر ,
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    کار
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="middle-box">
+                        <h3 class="title">
+                            ارسال ساده با تصویر ویژه برای نشان دادن اینجا
+                        </h3>
+                        <span class="text">
+                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و  صنعت چاپ  صنعت چاپ  صنعت چاپ      با استفاده از طراحان گرافیک است.
+                    </span>
+                        <img src="assets/img/img-blog-details-2.png" alt="">
+                    </div>
+                    <div class="data-box">
+                    <span class="data">
+                        8 اسفند 1397
+                    </span>
+                        <span class="comment">
+                        6 <i class="icon-bubble2"></i>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-auto col-md-6 col-12 p-0">
+                <div class="comment-box">
+                    <div class="middle-box">
+                        <p class="text">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            لورم ایپسوم متن ساختگی با  و با استفاده از طراحان گرافیک است.
+                        </p>
+                        <span class="name">
+                  علیرضا درخشان
+                    </span>
+                        <span class="job">
+                            طراح گرافیک
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-auto col-md-6 col-12 p-0">
+                <div class="little-box video-box">
+                    <div class="header-box">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    سفر ,
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    کار
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="middle-box">
+                        <h3 class="title">
+                            ارسال ساده با تصویر ویژه برای نشان دادن اینجا
+                        </h3>
+                        <span class="text">
+                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و  صنعت چاپ  صنعت چاپ  صنعت چاپ      با استفاده از طراحان گرافیک است.
+                    </span>
+                        <img src="assets/img/img-blog-details-2.png" alt="">
+                    </div>
+                    <div class="data-box">
+                    <span class="data">
+                        8 اسفند 1397
+                    </span>
+                        <span class="comment">
+                        6 <i class="icon-bubble2"></i>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-auto col-md-6 col-12 p-0">
+                <div class="link-box">
+                    <figure>
+                        <img src="assets/img/icon.png" alt="" class="icon">
+                    </figure>
+                    <p class="text">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم   از طراحان گرافیک است.
+                    </p>
+                    <a href="#" class="link">
+                        user.rahdoon.com
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-auto col-md-6 col-12 p-0">
+                <div class="big-box slider">
+                    <div class="header-box">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    استارت آپ ,
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    کار ,
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    سفر ,
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    تجارت
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="middle-box">
+                        <div class="owl-carousel owl-theme blog-slider">
+                            <div class="item">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <h3 class="title">
+                                        پیوست شده: قالب مهم و استاندارد پست
+                                    </h3>
+                                    <span class="text">
+                        لورم ایپسوم متن ساختگی با  صنعت چاپ تولید سادگی   صنعت چاپ نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    </span>
+                                </div>
+                                <img src="assets/img/img-blog-details-2.png" alt="">
+                            </div>
+                            <div class="item">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <h3 class="title">
+                                        پیوست شده: قالب مهم و استاندارد پست
+                                    </h3>
+                                    <span class="text">
+                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    </span>
+                                </div>
+                                <img src="assets/img/img-blog-details-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="nav-1" id="nav"></div>
+                    </div>
+                    <div class="data-box">
+                    <span class="data">
+                        8آذر 1398
+                    </span>
+                        <span class="comment">
+                        6 <i class="icon-bubble2"></i>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-auto col-md-6 col-12 p-0">
+                <div class="little-box video-box">
+                    <div class="header-box">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    سفر ,
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    کار
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="middle-box">
+                        <h3 class="title">
+                            ارسال ساده با تصویر ویژه برای نشان دادن اینجا
+                        </h3>
+                        <span class="text">
+                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و  صنعت چاپ  صنعت چاپ  صنعت چاپ      با استفاده از طراحان گرافیک است.
+                    </span>
+                        <img src="assets/img/img-blog-details-2.png" alt="">
+                    </div>
+                    <div class="data-box">
+                    <span class="data">
+                        8 اسفند 1397
+                    </span>
+                        <span class="comment">
+                        6 <i class="icon-bubble2"></i>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-auto col-md-6 col-12 p-0">
+                <div class="little-box video-box">
+                    <div class="header-box">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    سفر ,
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    کار
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="middle-box">
+                        <h3 class="title">
+                            ارسال ساده با تصویر ویژه برای نشان دادن اینجا
+                        </h3>
+                        <span class="text">
+                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و  صنعت چاپ  صنعت چاپ  صنعت چاپ      با استفاده از طراحان گرافیک است.
+                    </span>
+                        <img src="assets/img/img-blog-details-2.png" alt="">
+                    </div>
+                    <div class="data-box">
+                    <span class="data">
+                        8 اسفند 1397
+                    </span>
+                        <span class="comment">
+                        6 <i class="icon-bubble2"></i>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-auto col-md-6 col-12 p-0">
+                <div class="little-box whitout-img">
+                    <div class="header-box">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    سفر ,
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    کار
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="middle-box">
+                        <h3 class="title">
+                            لورم ایپسوم متن ساختگی با تولید سادگی
+                        </h3>
+                        <p class="text">
+                            لورم ایپسوم متن ساختگی با تولید سادگی  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم سوم متن ساختگی با تولید سادگی نامفهوم
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن  با تولید سادگی نامفهوم
+                            <br>
+                            <br>
+                            لورم ایپسوم متنبا تولید سادگی نامفهوم ساختگی با تولید سادگی نامفهوم
+
+                        </p>
+                    </div>
+                    <div class="data-box">
+                    <span class="data">
+                        8 آذر 1398
+                    </span>
+                        <span class="comment">
+                        6 <i class="icon-bubble2"></i>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#" >
+                    <i class="icon-right-chevron"></i>
+                </a>
+                <a href="#" class="arrow">
+                    <i class="icon-right-chevron-1"></i>
+                </a>
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#" class="arrow-">
+                    <i class="icon-left-chevron-1"></i>
+                </a>
+                <a href="#" >
+                    <i class="icon-left-chevron"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="scroll-top-fix container p-0">
+    <div class="scroll-fix">
+        <i class="fa fa-angle-up"></i>
+    </div>
+</div>
+</body>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.countdown.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.countdown.js"></script>
+<script src="assets/js/video/video.js"></script>
+<script src="assets/js/custom.js"></script>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title>Online Search</title>
+    <link rel="shortcut icon" href="assets/img/logo-title.png">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/video/video-js.css">
+    <link rel="stylesheet" href="assets/css/range/jquery.range.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="map-search" >
+    <div id="map" class="online-search">
+    </div>
+    <form action="#" class="form-map">
+        <h2 class="title">
+            جستجوی هتل
+        </h2>
+        <span class="subtitle">
+        مسیر خود را پیدا کنید
+    </span>
+        <select class="js-example-basic-single" id="Status" name="state">
+            <option>
+                موقعیت
+            </option>
+            <option>
+                موقعیت
+            </option>
+            <option>
+                موقعیت
+            </option>
+            <option>
+                موقعیت
+            </option>
+        </select>
+        <select class="js-example-basic-single" id="Type" name="state">
+            <option>
+                نوع
+            </option>
+            <option>
+                نوع
+            </option>
+            <option>
+                نوع
+            </option>
+            <option>
+                نوع
+            </option>
+        </select>
+        <select class="js-example-basic-single" id="Country" name="state">
+            <option>
+                کشور
+            </option>
+            <option>
+                کشور
+            </option>
+            <option>
+                کشور
+            </option>
+            <option>
+                کشور
+            </option>
+        </select>
+        <select class="js-example-basic-single" id="City" name="state">
+            <option>
+                شهر
+            </option>
+            <option>
+                شهر
+            </option>
+            <option>
+                شهر
+            </option>
+            <option>
+                شهر
+            </option>
+
+        </select>
+        <div class="body-filter">
+            <input class="range-slider-demo" type="hidden" value="5000"/>
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="price">
+                    <span id="high">$ 6500</span>  <span id="low">$ 600</span>
+                </div>
+            </div>
+        </div>
+        <input class="btn btn-search" type="submit" value="اکنون جستجو کن">
+    </form>
+</main>
+</body>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.countdown.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.countdown.js"></script>
+<script src="assets/js/video/video.js"></script>
+<!--Map-->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvufqhSj1p5k26z1G5x6q4Gxrbi5Mfskg&callback=initMap">
+</script>
+<script src="assets/js/range/jquery.range-min.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+    // Price
+    $('.title-filter').click(function () {
+        $(this).parent().find('.body-filter').slideToggle();
+        $(this).find('i').toggleClass('d-none')
+    })
+    $(document).ready(function(){
+        $('.range-slider-demo').jRange({
+            from: 30,
+            to: 6200,
+            step: 1,
+            format: '%s',
+            width: 270,
+            showLabels: true,
+            isRange : true
+        });
+    });
+</script>
+<script>
+    function initMap() {
+        var uluru = {lat:35.0449, lng:46.8480 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: uluru
+        });
+
+        var contentString =   '<div class="section-place"' +
+            ' style="padding: 10px;\n  font-family: YekanBakh;" >'+
+           ' <div class="d-flex">'+
+           ' <img src="assets/img/isfahan.png" alt="">'+
+           ' <div class="content"' +
+            ' style=" margin-right: 18px;\n  margin-top: 15px;">'+
+         '   <h2 class="titile"' +
+            ' style="color: rgba(0,0,0,0.8);\n  font-size: 20px;\n  font-weight: bold;\n  font-family: YekanBakh;">'+
+        '    دهبلاب دولاب'+
+       ' </h2>'+
+     '   <span class="subtitle" ' +
+            'style="color: #1fcf6d;\n font-size: 16px;\n font-weight: 300;\n display: block;">'+
+        '    <i class="icon-map-pin" ' +
+            'style=" margin-left: 10px;"></i>'+
+      '  دولاب، سنندج ، ایران'+
+           ' </span>'+
+       ' <div class="price">'+
+          '  <div class="d-flex align-items-center">'+
+            '<div class="circle" ' +
+            'style=" margin-top: 30px;\n height: 60px;\n width: 60px;\n  border:5px solid #e5e5e5;\n border-radius: 50%;\n margin-left: 30px;">'+
+          '  </div>'+
+            '<div class="text"' +
+            ' style=" margin-top: 30px;">'+
+           ' <span class="pri-ce"' +
+            ' style="  color: #1fcf6d; font-size: 22px;\n display: block;\n font-weight: bold;">' +
+            ' 1.700 دلار   ' +
+            ' </span>'+
+      '  <span class="subtitle-price" ' +
+            'style=" color: #b5b5b5; font-weight: 300;\n font-size: 14px;\n  display: block;"> ' +
+                ' قیمت در روز'+
+        '</span>'+
+        '</div>'+
+       ' </div>'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '</div>';
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            icon: 'assets/img/pin.png',
+        });
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+    }
+</script>
+</html>

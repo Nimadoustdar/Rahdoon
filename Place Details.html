@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title>جزئیات مکان</title>
+    <link rel="shortcut icon" href="assets/img/logo-title.png">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/datepicker/persian-datepicker.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/hover.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/smartphoto.css">
+    <link rel="stylesheet" href="assets/css/datepicker/persian-datepicker.css">
+    <link rel="stylesheet" href="assets/css/css/mobiscroll.jquery.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/basicResponsiveMenu.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="body">
+<header class="header-place" style="background-image: url('assets/img/1-1.jpg')">
+    <section class="main-menu">
+        <div class="container p-0">
+            <div class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo-header.png" alt="">
+                </a>
+                <div class="myNav mr-auto " >
+                    <ul class=" navbar-nav bg-transparent">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">صفحه اصلی <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">بلاگ</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link " href="#"> درباره ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"> تماس با ما  </a>
+                        </li>
+
+                        <li class="nav-item" >
+                            <div class="lng" >
+                                <div class="dropdown down-arrow">
+                                    <button class="btn btn-secondary dropdown-toggle bg-transparent" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        فا
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" id="dropdown-en" href="#">انگلیسی</a>
+                                        <a class="dropdown-item" href="#">فارسی</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item" >
+                            <a href="#" class="register">
+                                ثبت نام
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="content-header container p-0 d-flex flex-wrap justify-content-between align-items-center">
+        <div class="title-item">
+        <span class="rate">
+        9.3
+        <span class="full-rate">
+           / 10
+        </span>
+    </span>
+            <h3 class="title">
+              اقامتگاه بوم گردی گیشار
+            </h3>
+            <h6 class="location">
+                <i class="icon-map-pin"></i>
+                 سومین خیابان (سیروزانه)، رشت، ایران
+            </h6>
+        </div>
+        <div class="share-item">
+            <div class="d-flex flex-wrap">
+                <div class="rate">
+                    <i class="icon-star-full full"></i>
+                    <i class="icon-star-full full"></i>
+                    <i class="icon-star-full full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                </div>
+                <button class="btn write" type="button">
+                    <i class="icon-edit-2"></i>
+                    نوشتن نظر
+                </button>
+                <button class="btn btn-gp heart">
+                    <i class="icon-heart"></i>
+                    لایک
+                </button>
+                <button class="btn share btn-gp">
+                    <i class="icon-share"></i>
+                    اشتراک
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="place-details">
+    <div class="container p-0">
+        <ul class="nav btn-group nav-fix">
+            <li class="category-button2 calenders active-model">
+                تقویم
+            </li>
+            <li class="category-button2  overview">
+                بررسی اجمالی
+            </li>
+            <li class="category-button2 gallery">
+                تصاویر
+            </li>
+            <li class="category-button2 facilities">
+                امکانات
+            </li>
+            <li class="category-button2 map">
+                نقشه
+            </li>
+            <li class="category-button2 details" >
+                جزییات
+            </li>
+            <li class="category-button2 scores">
+                امتیازات
+            </li>
+            <li class="category-button2 reviews" >
+                نکات و نظرات
+            </li>
+
+        </ul>
+        <div class=" flex d-flex justify-content-between ">
+            <section class="main">
+                    <div class="section calender-1 pb-1">
+                        <h3 class="title ">
+                            تقویم
+                        </h3>
+                        <!--تقویم-->
+
+                        <div mbsc-page class="demo-multimonth">
+                            <div id="demo-multi-month-form">
+                                <div class="mbsc-grid">
+                                    <div class="mbsc-form-group">
+                                        <div class="mbsc-row mbsc-form-grid">
+                                            <div class="mbsc-col-sm-12 mbsc-col-md-12 mbsc-col-xl-12 ">
+                                                <div id="demo-bubble-two"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--پایان تقویم-->
+                    </div>
+                <div class="section overview-1">
+                    <h3 class="title ">
+                        بررسی اجمالی
+                    </h3>
+                    <div class="read-more collapsed">
+                        <div class="read-more__content">
+                            <div class="read-more__content__container">
+                                <p class="text">
+                                    قامتگاه بوم گردی گیشار در روستای
+                                    قاسم آباد سفلی بخش چابکسر شهرستان رودسر استان گیلان واقع می باشد. خانه روستایی گیشار
+                                    با مساحت ۳۰۰۰ متر مربع و زیر بنای ۱۲۰ متر مربع در دو طبقه با مصالحی مانند گچ، گل
+                                    و خاک رُس و با استفاده از چوب های نراد بنا شده است. خانه سنتی گیشار در میان برنجزار ها
+                                    ، باغات مرکبات و کیوی و گل و گیاه به همراه آلاچیق و استخر ماهی جهت قایق سواری و
+                                    پدالو قرار دارد. از دیگر ویژگی های مهم اقامتگاه بوم گردی گیشار می توان به پذیرایی
+                                    از بوم گردان با انواع غذاهای محلی و استفاده از کلوپ دریایی با امکاناتی مانند جت اسکی،
+                                    چتر پرواز، موتور چهارچرخ نام برد. سرای بوم گردی گیشار با ۲ اتاق و سرویس بهداشتی
+                                    و حمام اختصاصی، ظرفیت پذیرایی از ۲۰ نفر را دارد. از جاذبه های نزدیک به اقامتگاه
+                                    میتوان به قله بام گیشار، جنگل و ساحل در ۱۰۰۰ متری اقامتگاه، اشاره کرد.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="read-more__expand">
+                            <button class="btn">
+                                <i class="fa fa-chevron-down"></i>
+                                <i class="fa fa-chevron-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="section gallery-1" >
+                    <h3 class="title ">
+                        تصاویر
+                    </h3>
+                    <div class="gallery-modal">
+                        <div id="gallery" class="d-flex">
+                            <div class="owl-carousel owl-theme slider-modal">
+                                <a class="item js-smartPhoto" href="assets/img/1-1.jpg" data-caption="داخل اتاق" data-id="bear" data-group="animal">
+                                    <img src="assets/img/1-1.jpg" >
+                                </a>
+                                <a class="item js-smartPhoto" href="assets/img/1-2.jpg" data-caption="داخل اتاق" data-id="bear" data-group="animal">
+                                    <img src="assets/img/1-2.jpg" >
+                                </a>
+                                <a class="item js-smartPhoto" href="assets/img/1-3.jpg" data-caption="داخل اتاق" data-id="bear" data-group="animal">
+                                    <img src="assets/img/1-3.jpg" >
+                                </a>
+                                <a class="item js-smartPhoto" href="assets/img/1-4.jpg" data-caption="داخل سرویس بهداشتی" data-id="bear" data-group="animal">
+                                    <img src="assets/img/1-4.jpg" >
+                                </a>
+                            </div>
+                            <div id="navmodal"></div>
+                        </div>
+                        <!--<div class="navmodal"></div>-->
+                    </div>
+                </div>
+                <div class="section facilities-1">
+                    <h3 class="title ">
+                        امکانات
+                    </h3>
+                    <div class="d-flex flex-wrap ">
+                        <div class="col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                <i class="icon-rss"></i>
+                                <span class="text">
+                            وای فای
+                        </span>
+
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                <i class="fa fa-swimming-pool"></i>
+                                <span class="text">
+                           استخر
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                <i class="icon-open"></i>
+                                <span class="text">
+                            24 ساعته
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                <i class="icon-soccer"></i>
+                                <span class="text">
+                            فوتبال
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6 p-0">
+                            <div class="item">
+                                <i class="icon-sun"></i>
+                                <span class="text">
+                                حمام آفتاب
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6 p-0">
+                            <div class="item">
+                                <i class="icon-music"></i>
+                                <span class="text">
+                           موزیک زنده
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6 p-0">
+                            <div class="item">
+                                <i class="icon-tv"></i>
+                                <span class="text">
+                           تلویزیون
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6  p-0" >
+                            <div class="item">
+                                <i class="icon-food1"></i>
+                                <span class="text">
+                            رستوران
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6 p-0">
+                            <div class="item">
+                                <i class="icon-coffee"></i>
+                                <span class="text">
+                            کافی شاپ
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                <i class="icon-shopping-cart"></i>
+                                <span class="text">
+                            مرکز خرید
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6 p-0">
+                            <div class="item">
+                                <i class="icon-birthday-cake"></i>
+                                <span class="text">
+                            مراسم جشن
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                <i class="icon-paw"></i>
+                                <span class="text">
+                            حیوانات خانگی
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                <i class="icon-shower"></i>
+                                <span class="text">
+                            استحمام
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6 p-0">
+                            <div class="item">
+                                <i class="icon-location-park"></i>
+                                <span class="text">
+                            منظره جنگل
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                <i class="icon-anchor"></i>
+                                <span class="text">
+                                نزدیک به بندر
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                        <div class=" col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                <i class="icon-barbell"></i>
+                                <span class="text">
+                            باشگاه
+                        </span>
+                                <i class="fa fa-info-circle tooltipe-icon" data-toggle="tooltip" data-placement="bottom" title="تست"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section capacity-1">
+                    <h3 class="title ">
+                        ظرفیت
+                    </h3>
+                    <div class="d-flex flex-wrap ">
+                        <div class="col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                   <span class="text">
+                                          <i class="fa fa-users"></i>
+                           ظرفیت استاندارد :
+                        </span>
+                                <span class="text-1">
+
+                                8نفر
+                            </span>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                <span class="text">
+                                        <i class="fa fa-door-open"></i>
+                          اتاق :
+                        </span>
+                                <span class="text-1">
+                                1 عدد
+                            </span>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                 <span class="text">
+                                     <i class="fa fa-building"></i>
+                          متراژ زیر بنا :
+                        </span>
+                                <span class="text-1">
+                               120 متر
+                            </span>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                  <span class="text">
+                                      <i class="fa fa-bath"></i>
+                           تعداد حمام :
+                        </span>
+                                <span class="text-1">
+                                2عدد
+                            </span>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                    <span class="text">
+                                        <i class="fa fa-home"></i>
+                           متراژ محوطه :
+                        </span>
+                                <span class="text-1">
+                                200متر
+                            </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="section space-1">
+                    <h3 class="title ">
+                        فضای اقامتگاه
+                    </h3>
+                    <div class="d-flex flex-wrap ">
+                        <div class="col-xl-4 col-md-3 col-6 p-0">
+                            <div class="item">
+                                    <span class="text">
+                                        <i class="fa fa-handshake"></i>
+                           نوع اجاره :
+                        </span>
+                                <span class="text-1">
+                                خانه دربست
+                            </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-3 col-6 p-0">
+                            <div class="item">
+                                 <span class="text">
+                                     <i class="fa fa-city" ></i>
+                          منظقه اقامتگاه :
+                        </span>
+                                <span class="text-1">
+                               ساحلی
+                            </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-3 col-6 p-0">
+                            <div class="item">
+                                    <span class="text">
+                                    <i class="fas fa-hotel "></i>
+                          نوع اقامتگاه :
+                        </span>
+                                <span class="text-1">
+                               ویلا،سویت
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section sleep-1">
+                    <h3 class="title ">
+                        فضای خواب
+                    </h3>
+                    <div class="d-flex flex-wrap ">
+                        <div class="col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+
+                            <span class="text">
+                                <i class="flaticon-bed-1 icon-2"></i>
+                           تخت تکنفره :
+                        </span>
+                                <span class="text-1">
+                                8عدد
+                            </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                               <span class="text">
+                                     <i class="flaticon-bed icon-2"></i>
+                           تخت دونفره :
+                        </span>
+                                <span class="text-1">
+                                1عدد
+                            </span>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-4 col-md-3 col-6 p-0" >
+                            <div class="item">
+                                <span class="text">
+                                      <i class="flaticon-mattress icon-2"></i>
+                           رخت خواب :
+                        </span>
+                                <span class="text-1">
+                                8عدد
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section map-1">
+                    <h3 class="title">
+                        نقشه
+                    </h3>
+                    <div  id="googleMap"></div>
+                </div>
+                <div class="section author-1">
+                    <h3 class="title">
+                        صاحب اقامتگاه
+                    </h3>
+                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="user-info ">
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                            <div class="name-info">
+                             <span class="name">
+                       علیرضا درخشان
+                    </span>
+                                <span class="location">
+                     تهران،ایران
+                    </span>
+                            </div>
+                        </div>
+                        <ul class="nav flw">
+                            <li class="nav-item">
+
+                                <a href="#" class="nav-link">
+                             <span>
+                                  42
+                             </span>
+                                    لیست ها
+                                </a>
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="#" class="nav-link">
+                           <span>
+                                  12
+                           </span>
+                                    دنبال کنندگان
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                              <span>
+                                  34
+                              </span>
+                                    دنبال کننده
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                              <span>
+                                    56
+                              </span>
+                                    نظرات
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="btn follow">
+                            <i class="icon-eye"></i>
+                          مشاهده نمایه
+                        </button>
+                    </div>
+
+                </div>
+                <div class="section details-1">
+                    <h3 class="title">
+                        جزییات
+                    </h3>
+                    <ul class="nav information">
+                        <li class="nav-item location">
+                            <i class="icon-map-pin1">
+                            </i>
+                            مازندران،چابکسر،بابل
+                        </li>
+                        <!--<li class="nav-item phone">-->
+                        <!--<i class="icon-phone"></i>-->
+                        <!--+98 21 88 20 42 90-->
+                        <!--</li>-->
+                        <!--<li class="nav-item info">-->
+                        <!--<i class="icon-link"></i>-->
+                        <!--https://rahdoon.com-->
+                        <!--</li>-->
+                        <li class="nav-item closed">
+                            <i class="icon-clock"></i>
+                            <span class="red">
+                          بسته شده تا ظهر
+                       </span>
+                        </li>
+                        <li class="nav-item d-flex justify-content-between">
+                  <span>
+                     دوشنبه-سه شنبه و یک شنبه
+                  </span>
+                            <span>
+                      بعد از ظهر- نیمه شب
+                    </span>
+                        </li>
+                        <li class="nav-item d-flex justify-content-between">
+                      <span>
+                           جمعه و شنبه
+                      </span>
+                            <span>
+                             ظهر–1:00 نیمه شب
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section scores-1">
+                    <h3 class="title">
+                        امتیازات
+                    </h3>
+                    <div class="rateplace">
+                        <div class="heading">
+                            <div class="rate-item d-flex align-items-center">
+                                <span class="number">
+                        43
+                    </span>
+                                <div class="score-total">
+                                    <div class="rate">
+                                        <i class="icon-star-full full"></i>
+                                        <i class="icon-star-full full"></i>
+                                        <i class="icon-star-full full"></i>
+                                        <i class="icon-star-full"></i>
+                                        <i class="icon-star-full"></i>
+                                    </div>
+                                    <span class="title-rate">
+                                        از
+                                        <span class="bold">
+                                            223 نظر
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 d-flex justify-content-between align-items-center">
+                                <div class="side-">
+                                    <i class="icon-tick"></i>
+                                    پاکیزگی ونظافت
+                                </div>
+                                <div class="rate">
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full"></i>
+                                    <i class="icon-star-full"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 d-flex justify-content-between align-items-center">
+                                <div class="side-">
+                                    <i class="icon-tick"></i>
+                                  برخورد کارکنان
+                                </div>
+                                <div class="rate">
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full"></i>
+                                    <i class="icon-star-full"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 d-flex justify-content-between align-items-center">
+                                <div class="side-">
+                                    <i class="icon-tick"></i>
+                                    ارزش خرید
+                                </div>
+                                <div class="rate">
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full"></i>
+                                    <i class="icon-star-full"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 d-flex justify-content-between align-items-center">
+                                <div class="side-">
+                                    <i class="icon-tick"></i>
+                                    موقعیت
+                                </div>
+                                <div class="rate">
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full full"></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 d-flex justify-content-between align-items-center">
+                                <div class="side-">
+                                    <i class="icon-tick"></i>
+                                    سرویس و خدمات
+                                </div>
+                                <div class="rate">
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full full"></i>
+                                    <i class="icon-star-full"></i>
+                                    <i class="icon-star-full"></i>
+                                    <i class="icon-star-full"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section comment-item reviews-1">
+                    <div class="header-comment d-flex justify-content-between align-items-center">
+                        <h3 class="title ">
+                            نکات و نظرات
+                        </h3>
+                        <a href="#" class="write">
+                            <i class="icon-edit-2"></i>
+                            نوشتن نظر
+                        </a>
+                    </div>
+                    <div class="comment" style="border-top: none;">
+                        <div class="top-comment d-flex justify-content-between">
+                            <div class="user-info ">
+                                <figure>
+                                    <img src="" alt="">
+                                </figure>
+                                <div class="name-info">
+                             <span class="name">
+                       علیرضا درخشان
+                    </span>
+                                    <span class="location">
+                      تهران،ایران
+                    </span>
+
+                                </div>
+                            </div>
+                            <div class="data-info">
+                        <span class="date">
+                       نوشته شده 7 آذر 1398
+                      </span>
+                                <span class="rate">
+                        8.0
+                        </span>
+                            </div>
+                        </div>
+                        <div class="middle-comment">
+                        <span class="rate-text">
+                       سرویس خوب اما...
+                    </span>
+                            <p class="text">
+
+                                موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای
+                                اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. لورم ایپسوم متن
+                                ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                                روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                                متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
+                                شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای
+                                علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+                                تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+
+                            </p>
+                        </div>
+                        <div class="bottom-comment d-flex justify-content-between ">
+                            <button class="btn give-rate">
+                                <i class="icon-thumbs-up"></i>
+                                <span class="text">
+                                    مفید بودن مطلب
+                                </span>
+                                <span class="number">
+                            8
+                        </span>
+                            </button>
+                            <a href="#" class="reply">
+                                <i class="icon-forward"></i>
+                                پاسخ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="comment reply">
+                        <div class="top-comment d-flex justify-content-between">
+                            <div class="user-info ">
+                                <figure>
+                                    <img src="" alt="">
+                                </figure>
+                                <div class="name-info">
+                             <span class="name">
+                       علیرضا درخشان
+                    </span>
+                                    <span class="location">
+                      تهران،ایران
+                    </span>
+
+                                </div>
+                            </div>
+                            <div class="data-info">
+                        <span class="date">
+                       نوشته شده 7 آذر 1398
+                      </span>
+                                <span class="rate">
+                        8.0
+                        </span>
+                            </div>
+                        </div>
+                        <div class="middle-comment">
+                        <span class="rate-text">
+                       سرویس خوب اما...
+                    </span>
+                            <p class="text">
+
+                                موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای
+                                اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. لورم ایپسوم متن
+                                ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                                روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                                متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
+                                شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای
+                                علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+                                تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+
+                            </p>
+                        </div>
+                        <div class="bottom-comment d-flex justify-content-between ">
+                            <button class="btn give-rate">
+                                <i class="icon-thumbs-up"></i>
+                                <span class="text">
+                                    مفید بودن مطلب
+                                </span>
+                                <span class="number">
+                            8
+                        </span>
+                            </button>
+                            <a href="#" class="reply">
+                                <i class="icon-forward"></i>
+                                پاسخ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="leave-comment">
+                        <form action="#" class="send-comment">
+                            <div class="header-cm">
+                                <h3 class="title -red">
+                                    ما را ارزیابی کنید و نقد کنید
+                                </h3>
+                                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <div class="rate-item">
+                                     <span class="title-rate">
+                      امتیاز شما برای این لیست:
+                    </span>
+                                        <div class="d-flex">
+                                            <div class="rate">
+                                                <fieldset class="rating">
+                                                    <input type="radio" id="star10" name="rating" value="10" />
+                                                    <label class = "full" for="star10" title=""></label>
+                                                    <input type="radio" id="star9" name="rating" value="9" />
+                                                    <label class = "full" for="star9" title=""></label>
+                                                    <input type="radio" id="star8" name="rating" value="8" />
+                                                    <label class = "full" for="star8" title=""></label>
+                                                    <input type="radio" id="star7" name="rating" value="7" />
+                                                    <label class = "full" for="star7" title=""></label>
+                                                    <input type="radio" id="star6" name="rating" value="6" />
+                                                    <label class = "full" for="star6" title=""></label>
+                                                    <input type="radio" id="star5" name="rating" value="5" />
+                                                    <label class = "full" for="star5" title=""></label>
+                                                    <input type="radio" id="star4" name="rating" value="4" />
+                                                    <label class = "full" for="star4" title=""></label>
+                                                    <input type="radio" id="star3" name="rating" value="3" />
+                                                    <label class = "full" for="star3" title=""></label>
+                                                    <input type="radio" id="star2" name="rating" value="2" />
+                                                    <label class = "full" for="star2" title=""></label>
+                                                    <input type="radio" id="star1" name="rating" value="1" />
+                                                    <label class = "full" for="star1" title=""></label>
+                                                </fieldset>
+                                            </div>
+                                            <span class="number">
+                            8 / 10
+                    </span>
+                                        </div>
+                                    </div>
+                                    <div class="upload-file " >
+                                        <input class="input d-none" type="file" id="file" name="file" >
+                                        <label class="label-" for="file">
+                                            <i class="icon-upload-cloud" ></i>
+                                            <span>
+              آپلود عکس
+                </span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-between flex-wrap">
+                                <div class="col-xl-auto col-md-6 col-12 p-0">
+                                    <input class="input-box" type="text" placeholder=" نام و نام خانوادگی شما">
+                                </div>
+                                <div class="col-xl-auto col-md-6 col-12 p-0">
+                                    <input class="input-box" type="text" placeholder=" پست الکترونیک ">
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-12 col-12 p-0">
+                                <textarea class="massage-box"  placeholder="نظرات "></textarea>
+                            </div>
+                            <button class="btn btn-post" type="ارسال">
+                                ارسال
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="side ">
+                <div class="scroll-mobile">
+
+                </div>
+                <div class="position-sticky" style="top: 0;">
+                    <div class="close">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <div class="item">
+                        <div class="price">
+                        <span class="currency">
+                  هزینه یک شب اقامت :
+                </span>
+                            <div class="mablaq">
+                                <del class="price-">
+                                    175000 تومان
+                                </del>
+                                <span class="price-t off">
+                                100000 تومان
+                            </span>
+                            </div>
+                        </div>
+
+                        <form action="#" class="d-flex flex-wrap col-xl-12  col-12 price-item ">
+                            <div class="d-flex flex-wrap col-xl-12 col-lg-6 col-md-6 col-12 p-0">
+                                <div class="col-xl-6 col-6 p-0">
+                                    <label for="from">
+                                        رفت :
+                                    </label>
+                                    <input class="range-from-example" autocomplete="off" id="from" placeholder="تاریخ رفت" />
+                                </div>
+                                <div class="col-xl-6 col-6 p-0">
+                                    <label for="to">
+                                        برگشت :
+                                    </label>
+                                    <input class="range-to-example" autocomplete="off"  id="to" placeholder="تاریخ برگشت"/>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-6 col-md-6 col-12 pr-0 pl-0">
+                                <label for="pack">
+                                    چند نفر؟
+                                </label>
+                                <div class="number">
+                                    <div class="btn-group btn- count-product count">
+
+                                            <span class="nafarat" >
+                         تعداد نفرات
+                    </span>
+                                        <div class="item-number d-flex">
+                                            <div class="btn-- minus btn-minus down">
+                                                <i class="icon-minus"></i>
+                                            </div>
+                                            <input type="text" id="pack"  class="count" min="0" max="10" value="0"  title="" autocomplete="off" readonly/>
+
+                                            <div class="btn-- plus btn-plus up">
+                                                <i class="icon-plus"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-6 col-md-6 col-12 pr-0 pl-0">
+                                <label for="reserv">
+                                    تور چگونه باشد؟
+                                </label>
+                                <select class="js-example-basic-single" id="reserv" name="state" >
+                                    <option>
+                                        با صبحانه
+                                    </option>
+                                    <option>
+                                        بدون غذا
+                                    </option>
+                                    <option>
+                                        با تمام امکانات
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="col-xl-12 col-lg-6 col-md-6 col-12 pr-0 pl-0">
+                                <label for="off">
+                                    کد تخفیف
+                                </label>
+                                <div class="d-flex">
+                                    <input class="input position-relative" type="text" id="off">
+                                    <button class="btn off-btn">
+                                        اعمال کد تخفیف
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="secured">
+                                <div class="icon">
+                                    <i class="icon-caution1"></i>
+                                </div>
+                                <div class="content-secured">
+                            <span class="title-">
+                          همه معامله امن است
+                        </span>
+                                    <span class="text">
+                     لغو شده توسط سیستم پرداخت کامل خواهد شد در صورتی که این معامله بازپرداخت شود
+
+                        </span>
+                                </div>
+                            </div>
+                            <button class="checkout submit">
+                                پرداخت
+                                <i class="icon-left-arrow"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="item tags">
+                        <h3 class="title">
+                            برچسبهای فهرست
+                        </h3>
+                        <a href="#" class="tag  hvr-shadow">
+                            رستوران
+                        </a>
+                        <a href="#" class="tag hvr-shadow">
+                            رومانتیک
+                        </a>
+                        <a href="#" class="tag hvr-shadow">
+                            غذا
+                        </a>
+                        <a href="#" class="tag hvr-shadow">
+                            دنج
+                        </a>
+                        <a href="#" class="tag hvr-shadow">
+                            پاستا
+                        </a>
+                        <a href="#" class="tag hvr-shadow" >
+                            غذا دریایی
+                        </a>
+                        <a href="#" class="tag hvr-shadow ">
+                            غذای سالم
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<footer class="footer place-details-footer">
+    <div class="container p-0 d-flex flex-wrap justify-content-between align-items-center">
+        <div class="col-lg-auto col-md-4 col-sm-12 col-12">
+            <div class="contact-item">
+                <h6 class="title" >
+                    ارتباط با ما
+                </h6>
+                <span class="tel" style="direction: ltr;"  >
+            +۹۸ ۱۳ ۳۳۳۲ ۹۴۴۴
+            </span>
+                <span class="info d-block"  >
+                info@rahdoon.com
+            </span>
+                <ul class="nav nav-social">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="#" class="nav-link">
+                            <i class="icon-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="icon-pinterest"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="icon-google-plus  "></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-auto col-md-4 col-sm-1  col-12" >
+            <div class="logo-footer">
+                <img src="assets/img/logo-footer.png" alt="">
+            </div>
+        </div>
+        <div class="col-lg-auto col-md-4 col-sm-12 col-12">
+            <div class="download-app">
+            <span class="text">
+         راهدون قراره کلی اقامتگاه های روستایی زیبا رو بهتون معرفی کنه تا با سبک زندگی روستایی آشنا بشین و تجربش کنین
+
+            </span>
+                <a href="#" class="download">
+                    <i class="icon-apple"></i>
+                    <span class="title-download">
+                    APPLE STORE
+                </span>
+                </a>
+                <a href="#" class="download">
+                    <i class="icon-logo"></i>
+                    <span class="title-download">
+                   GOOGLE PLAY
+                </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--scroll-->
+<div class="scroll-top-fix container p-0">
+    <div class="scroll-fix scroll-fix-details">
+        <i class="fa fa-angle-up"></i>
+    </div>
+</div>
+<!--نمایش در حالت گوشی-->
+<div class="reserv-fix-mobile">
+    <div class="container p-0">
+        <div class=" col-12 p-0 d-flex justify-content-between align-items-center">
+            <div class="col-6 p-0 ">
+           <span class="t-price">
+               قیمت هر شب
+           </span>
+                <span class="price">
+                100,000 تومان
+            </span>
+            </div>
+            <div class="col-6 p-0">
+                <button class="show-on-mobile btn ">
+                    درخواست رزرو
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.countdown.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/smartphoto.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/video/video.js"></script>
+<script src="assets/js/basicResponsiveMenu.js"></script>
+<script src="assets/js/datepicker/persian-datepicker.js"></script>
+<script src="assets/js/datepicker/persian-date.min.js"></script>
+<script src="assets/js/mobiscroll.jquery.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvufqhSj1p5k26z1G5x6q4Gxrbi5Mfskg&callback=initMap"></script>
+<script src="assets/js/custom.js"></script>
+<!--Map-->
+<script>
+    function initMap() {
+        var uluru = {lat:36.8535, lng: 50.4748};
+        var map = new google.maps.Map(document.getElementById('googleMap'), {
+            zoom:17,
+            center: uluru,
+            disableDefaultUI: true,
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            icon: 'assets/img/pin2.png',
+
+        });
+    }
+</script>
+<!--Gallery-->
+<script>
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 25) {
+            $('.rsmm-open-button').addClass('change');
+        } else {
+            $('.rsmm-open-button').removeClass('change');
+        }
+    });
+    window.addEventListener('DOMContentLoaded',function(){
+        new SmartPhoto(".js-smartPhoto");
+    });
+</script>
+<!--Big Calender-->
+<script>
+    $(function () {
+        $(function () {
+            var booked = [],
+                invalid = ['w1'],
+                now = new Date(),
+                min = new Date(now.getFullYear(), now.getMonth(), now.getDate()),
+                max = new Date(now.getFullYear(), now.getMonth() + 2, now.getDate()),
+                firstMonth = generateMonthEvents(now.getFullYear(), now.getMonth());
+            booked = firstMonth.labels;
+            invalid = invalid.concat(firstMonth.invalid);
+            function getRandomDay() {
+                return Math.floor(Math.random() * 100) % 28 ;
+            }
+            function generateMonthEvents(year, month) {
+                var isDisabled,
+                    tempDay,
+                    invalid = [],
+                    labels = [],
+                    disabledDays = [getRandomDay(), getRandomDay(), getRandomDay(), getRandomDay()];
+                for (var i = 1; i <= new Date(year, month + 1, 0).getDate(); ++i) {
+                    tempDay = new Date(year, month, i, now.getHours(), now.getMinutes(), now.getSeconds());
+                    if (tempDay.getTime() >= now.getTime() && tempDay.getTime() <= max.getTime()) {
+                        isDisabled = disabledDays.indexOf(i) !== -1 || tempDay.getDay() == 1;
+                        if (isDisabled) {
+                            invalid.push(tempDay);
+                        }
+                        labels.push({
+                            d: tempDay,
+                            text: isDisabled ? (tempDay.getDay() == 1 ? ' ' : ' ') : Math.round(Math.random() * 10) % 5 + 1 + '15,000',
+                            color: isDisabled ? '' : '',
+
+                        });
+                    }
+                }
+                return {
+                    labels: labels,
+                    invalid: invalid,
+                };
+            }
+            // Mobiscroll Calendar initialization
+            $('#demo-multi-month-form').mobiscroll().form({
+                display: 'inline',
+                calendarSystem: 'jalali',
+                lang: 'fa',
+                rtl: true,
+            });
+            // Mobiscroll Calendar initialization
+            $('#demo-bubble-two').mobiscroll().calendar({
+                display: 'inline',
+                // Specify display mode like: display: 'bottom' or omit setting to use default
+                months: 2,
+                // More info about months: https://docs.mobiscroll.com/4-7-3/calendar#opt-months
+                yearChange: false, // More info about yearChange: https://docs.mobiscroll.com/4-7-3/calendar#opt-yearChange
+                controls: ['calendar'],
+                min: min,
+                max: max,
+                invalid: invalid,
+                labels: booked,
+                responsive: {
+                    xsmall: {
+                        controls: ['calendar'],
+                        months: 1,
+                        yearChange: false,
+                        touchUi: false
+                    },
+                    small: {
+                        controls: ['calendar'],
+                        months: 1,
+                        yearChange: false,
+                        touchUi: false
+                    },
+                    medium: {
+                        controls: ['calendar'],
+                        months: 2,
+                        yearChange: false,
+                        touchUi: false
+                    }
+                },
+                onPageLoading: function (event, inst) {
+                    var newItems,
+                        year = event.firstDay.getFullYear(),
+                        month = event.firstDay.getMonth(),
+                        isEventsLoaded = (inst.settings.labels).filter(function (v) {
+                            return v.d.getMonth() == month + 1;
+                        }).length;
+                    if (!isEventsLoaded) {
+                        newItems = generateMonthEvents(year, month + 1);
+                        inst.settings.labels = inst.settings.labels.concat(newItems.labels);
+                        inst.settings.invalid = inst.settings.invalid.concat(newItems.invalid);
+                    }
+                }
+            });
+        });
+        mobiscroll.settings = {
+            lang: 'fa',
+            theme: 'ios',
+            display: 'center',
+
+        };
+
+
+    });
+
+    $(document).ready(function () {
+
+        ConvertNumberToPersions();
+    });
+
+</script>
+<!--From To Calender-->
+<script>
+
+    // CALENDER
+    var to, from;
+    to = $(".range-to-example").persianDatepicker({
+        autoClose: true,
+        format: 'YYYY/MM/DD',
+        // calendarType: 'gregorian',
+        initialValue: false,
+        "toolbox": {
+            "enabled": true,
+            "calendarSwitch": {
+                "enabled": false,
+                "format": "MMMM"
+            },
+            "todayButton": {
+                "enabled": false,
+                "text": {
+                    "fa": "امروز",
+                    "en": "Today"
+                }
+            }
+        },
+        responive:true,
+        altField: '.range-to-example-alt',
+        altFormat: 'LLLL',
+        onSelect: function (unix) {
+            to.touched = true;
+            if (from && from.options && from.options.maxDate != unix) {
+                var cachedValue = from.getState().selected.unixDate;
+                from.options = {maxDate: unix};
+                if (from.touched) {
+                    from.setDate(cachedValue);
+                }
+            }
+        }
+    });
+    from = $(".range-from-example").persianDatepicker({
+        autoClose: true,
+        format: 'YYYY/MM/DD',
+        // calendarType: 'gregorian',
+        initialValue: false,
+
+        "toolbox": {
+            "enabled": true,
+            "calendarSwitch": {
+                "enabled": false,
+                "format": "MMMM"
+            },
+            "todayButton": {
+                "enabled": false,
+                "text": {
+                    "fa": "امروز",
+                    "en": "Today"
+                }
+            }
+        },
+        responive:true,
+        altField: '.range-from-example-alt',
+        altFormat: 'LLLL',
+        onSelect: function (unix) {
+            from.touched = true;
+            if (to && to.options && to.options.minDate != unix) {
+                var cachedValue = to.getState().selected.unixDate;
+                to.options = {minDate: unix};
+                if (to.touched) {
+                    to.setDate(cachedValue);
+                }
+            }
+        }
+    });
+</script>
+<!--Tooltip-->
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title>افزودن مکان جدید</title>
+    <link rel="shortcut icon" href="assets/img/logo-title.png">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/video/video-js.css">
+    <!--- alert dropzone and cropper ------->
+    <!--<link rel="stylesheet" href="assets/sweetalert2/dist/sweetalert2.min.css" />-->
+    <link rel="stylesheet" href="assets/cropper/cropper.min.css" />
+    <link rel="stylesheet" href="assets/dropzone/dropzone.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="add-new">
+    <div class="container p-0">
+        <form action="#">
+            <div class="box general-info">
+                <span class="title-">
+              اطلاعات عمومی
+           </span>
+                <div class="number">
+                    1
+                </div>
+                <div class="row- ">
+                   <div class="item col-lg-6 col-md-6 col-12 p-0">
+                       <label class="label-" for="title">
+                           فهرست عنوان:
+                       </label>
+                       <input type="text" id="title" placeholder="عنوان">
+                   </div>
+                    <div class="item col-lg-6 col-md-6 col-12 p-0">
+                        <label  class="label-"  for="category">
+                            دسته بندی
+                        </label>
+                        <select class="js-example-basic-single" name="state" id="category">
+                            <option value="choose">
+                                دسته را انتخاب کنید
+                            </option>
+                            <option value="iran">
+                               نمونه اول
+                            </option>
+                            <option value="iraq">
+                                نمونه دوم
+                            </option>
+                            <option value="pakistan">
+                                نمونه سوم
+                            </option>
+                            <option value="japon">
+                                نمونه چهارم
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row-">
+                    <div class="item col-lg-6 col-md-6 col-12 p-0">
+                        <label for="keyword" class="label-">
+                            کلمه کلیدی :
+                        </label>
+                        <input type="text" id="keyword"  placeholder="کلمات کلیدی باید با کاما جدا شوند">
+                    </div>
+                    <div class="item col-lg-6 col-md-6 col-12 p-0">
+                        <label for="website" class="label-">
+                            سایت اینترنتی :
+                        </label>
+                        <input type="text" id="website" placeholder="آدرس وبسایت را وارد کنید">
+                    </div>
+                </div>
+                <div class="row-">
+                    <div class="item item-select  col-lg-4 col-md-4 col-12 p-0">
+                        <label  class="label-"  for="price">
+                             قیمت حدودی :
+                        </label>
+                        <select class="js-example-basic-single item-3" name="state" id="price">
+                            <option value="choose">
+                                $$ - عادی
+                            </option>
+                            <option value="iran">
+                                نمونه اول
+                            </option>
+                            <option value="iraq">
+                                نمونه دوم
+                            </option>
+                            <option value="pakistan">
+                                نمونه سوم
+                            </option>
+                            <option value="japon">
+                                نمونه چهارم
+                            </option>
+                        </select>
+                    </div>
+                    <div class="item   col-lg-4 col-md-4 col-12 p-0">
+                        <label for="phone" class="label-">
+                            تلفن :
+                        </label>
+                        <input type="text" class="item-3 " id="phone" placeholder="شماره تلفن را وارد کنید">
+                    </div>
+                    <div class="item  col-lg-4 col-md-4 col-12 p-0">
+                        <label for="email" class="label-">
+                            پست الکترونیک :
+                        </label>
+                        <input class="item-3 " type="text" id="email" placeholder="ادرس پست الکترونیکی را وارد کن">
+                    </div>
+
+                </div>
+                <div class="row-">
+                   <div class="item item-textarea">
+                       <label for="describ" class="label-">
+                           شرح:
+                       </label>
+                       <div class="col-lg-12 col-md-12 col-12 p-0">
+                           <textarea id="describ" placeholder="لیست را توصیف کنید">
+               </textarea>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="box location">
+                <span class="title-">
+             محل
+           </span>
+                <div class="number">
+                    2
+                </div>
+                <div class="row-">
+                  <div class="item  col-lg-4 col-md-4 col-12 p-0">
+                      <label for="country" class="label-">
+                          کشور :
+                      </label>
+                      <input type="text" class="item-3 " id="country" placeholder="کشور خود را وارد کنید">
+                  </div>
+                  <div class="item item-select  col-lg-4 col-md-4 col-12 p-0">
+                      <label  class="label-"  for="city">
+                          شهر:
+                      </label>
+                      <select class="js-example-basic-single" name="state" id="city">
+                          <option value="choose">
+                              شهر را انتخاب کنید
+                          </option>
+                          <option value="iran">
+                              نمونه1
+                          </option>
+                          <option value="iraq">
+                              نمونه 2
+                          </option>
+                          <option value="pakistan">
+                              نمونه 3
+                          </option>
+                          <option value="japon">
+                              نمونه 4
+                          </option>
+                      </select>
+                  </div>
+                   <div class="item  col-lg-4 col-md-4 col-12 p-0">
+                       <label for="address" class="label-">
+                           نشانی :
+                       </label>
+                           <input class="item-3 " type="text" id="address" placeholder="آدرس را وارد کنید">
+                   </div>
+                </div>
+            </div>
+            <div class="box opening">
+                <span class="title-">
+           محل
+           </span>
+                <div class="number">
+                    3
+                </div>
+                <div class="row- row-hours">
+                    <div class="item item-hours d-flex flex-wrap align-items-center">
+                        <label class="label- label-hours">
+                            روزهای هفته:
+                        </label>
+                        <div class="col-lg-auto col-md-5 col-12 p-0">
+                            <select class="js-example-basic-single" name="state" >
+                                <option value="choose">
+                                    زمان بازگشایی
+                                </option>
+                                <option value="iran">
+                                    تست
+                                </option>
+                                <option value="iraq">
+                                    تست  2
+                                </option>
+                                <option value="pakistan">
+                                    تست  3
+                                </option>
+                                <option value="japon">
+                                    تست  4
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-lg-auto col-md-5 col-12 p-0">
+                            <select class="js-example-basic-single" name="state">
+                                <option value="choose">
+                                    زمان بسته شدن
+                                </option>
+                                <option value="iran">
+                                    تست
+                                </option>
+                                <option value="iraq">
+                                    تست 2
+                                </option>
+                                <option value="pakistan">
+                                    تست 3
+                                </option>
+                                <option value="japon">
+                                    تست 4
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="item item-hours d-flex flex-wrap align-items-center">
+                        <label class="label- label-hours">
+                            روزهای هفته:
+                        </label>
+                        <div class="col-lg-auto col-md-5 col-12 p-0">
+                            <select class="js-example-basic-single" name="state" >
+                                <option value="choose">
+                                    زمان بازگشایی
+                                </option>
+                                <option value="iran">
+                                    تست
+                                </option>
+                                <option value="iraq">
+                                    تست 2
+                                </option>
+                                <option value="pakistan">
+                                    تست 3
+                                </option>
+                                <option value="japon">
+                                    تست 4
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-lg-auto col-md-5 col-12 p-0">
+                            <select class="js-example-basic-single" name="state">
+                                <option value="choose">
+                                    زمان بسته شدن
+                                </option>
+                                <option value="iran">
+                                    تست
+                                </option>
+                                <option value="iraq">
+                                    تست 2
+                                </option>
+                                <option value="pakistan">
+                                    تست 3
+                                </option>
+                                <option value="japon">
+                                    تست 4
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box upload">
+                <div class="container p-0">
+                       <span class="title-">
+             گالری
+           </span>
+                    <div class="number">
+                        4
+                    </div>
+                    <div id="form-step-2" role="form" data-toggle="validator">
+                        <div id="drops" class="dropzone">
+                            <div class="dz-default dz-message">
+                                <p><i class="icon-folder-plus"></i></p>
+                                <p>اینجا را کلیک کنید یا فایلها را برای آپلود بکشید
+                                    <!--<button type="submit" id="choosefile">انتخاب فایل</button>را کلیک کنید</p>-->
+                                </p>
+                            </div>
+                            <div class="fallback">
+                                <input name="file" type="file" multiple />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box location">
+                <span class="title-">
+        شبکه های اجتماعی
+           </span>
+                <div class="number">
+                    5
+                </div>
+                <div class="row-">
+                    <div class="item  col-lg-3 col-md-3 col-12 p-0">
+                        <label for="face" class="label-">
+                            فیس بوک
+                            <span class="light-title">
+                                ( اختیاری )
+                            </span>
+                        </label>
+                        <input type="text" class="item-4" id="face" placeholder=" نشانی فیس بوک">
+                    </div>
+                    <div class="item   col-lg-3 col-md-3 col-12 p-0">
+                        <label for="twit" class="label-">
+                            تویتر
+                            <span class="light-title">
+                              ( اختیاری )
+                            </span>
+                        </label>
+                        <input type="text" class="item-4 " id="twit" placeholder=" نشانی توییتر">
+                    </div>
+                    <div class="item  col-lg-3 col-md-3 col-12 p-0">
+                        <label for="tlgrm" class="label-">
+                            تلگرام
+                            <span class="light-title">
+                               ( اختیاری )
+                            </span>
+                        </label>
+                        <input type="text" class="item-4 " id="tlgrm" placeholder=" نشانی تلگرام">
+                    </div>
+                    <div class="item   col-lg-3 col-md-3 col-12 p-0">
+                        <label for="instgram" class="label-">
+                            اینستاگرام
+                            <span class="light-title">
+                              ( اختیاری )
+                            </span>
+                        </label>
+                        <input type="text" class="item-4 " id="instgram" placeholder="نشانی اینستاگرام ">
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group btns-form">
+                <button class="btn btn-save-">
+                   ذخیره بصورت پیش فرض
+                </button>
+                <button class="btn btn-share-">
+                    حالا به اشتراک بگذارید
+                </button>
+            </div>
+        </form>
+
+    </div>
+</main>
+<div class="scroll-top-fix container p-0">
+    <div class="scroll-fix">
+        <i class="fa fa-angle-up"></i>
+    </div>
+</div>
+</body>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.countdown.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.countdown.js"></script>
+<script src="assets/js/video/video.js"></script>
+<!-- dropzone and croper ------->
+<script src="assets/cropper/cropper.min.js"></script>
+<script src="assets/dropzone/dropzone.js"></script>
+<script src="assets/dropzone/dropzone-cropper.js"></script>
+<script src="assets/js/custom.js"></script>
+</html>

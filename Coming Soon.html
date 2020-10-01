@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title> بزودی</title>
+    <link rel="shortcut icon" href="assets/img/logo-title.png">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/video/video-js.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<section class="coming-soon">
+    <div class="container p-0">
+        <img class="logo" src="assets/img/logo-header.png" alt="">
+        <h6 class="title">
+            بزودی با وب سایت و برنامه
+        </h6>
+        <ul class="discount" data-countdown="2019/12/11" ></ul>
+    </div>
+</section>
+</body>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.countdown.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.countdown.js"></script>
+<script src="assets/js/video/video.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+    $('[data-countdown]').each(function() {
+        var $this = $(this), finalDate = $(this).data('countdown');
+        $this.countdown(finalDate, function(event) {
+            var $this = $(this).html(event.strftime(''
+                + '<li><span class="number">%D </span></li><span class="dots"> روز</span> '
+                + '<li><span class="number">%H</span></li><span class="dots"> ساعت</span>  '
+                + '<li><span class="number">%M</span></li> <span class="dots"> دقیقه</span> '
+                + '<li><span class="number">%S</span></li> <span class="dots"> ثانیه</span> '
+
+            ));
+            ConvertNumberToPersion();
+        });
+        ConvertNumberToPersion();
+    });
+</script>
+</html>

@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title>  دسته بندی شهرها با فیلتر</title>
+    <link rel="shortcut icon" href="assets/img/logo-title.png">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/range/jquery.range.css">
+    <link rel="stylesheet" href="assets/css/datepicker/persian-datepicker.css">
+    <link rel="stylesheet" href="assets/css/video/video-js.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="cities-grid header-scroll">
+    <div class="header-grid ">
+        <div class=" container d-flex flex-wrap p-0">
+            <div class="location col-xl-4 col-md-6 col-12 p-0">
+               <div class="item">
+               <label for="location">
+                   <i class="icon-map-pin"></i>
+                   کجا؟
+               </label>
+               <input type="text" id="location" placeholder="هر جا">
+           </div>
+            </div>
+            <div class="calender  col-xl-2 col-md-3 col-12 p-0">
+                <div class="item">
+                    <label for="from1">
+                        <i class="icon-calendar"></i>
+                        از تاریخ
+                    </label>
+                    <input class="range-from-example" id="from1" autocomplete="off" placeholder="تاریخ رفت" />
+                </div>
+            </div>
+            <div class="calender  col-xl-2 col-md-3 col-12 p-0">
+               <div class="item">
+                   <label for="to">
+                       <i class="icon-calendar"></i>
+                       تا تاریخ
+                   </label>
+                   <input class="range-to-example" id="to" autocomplete="off" placeholder="تاریخ برگشت"/>
+               </div>
+            </div>
+            <div class="guestse  col-xl-3 col-md-6 col-9 p-0">
+                <label for="gueste">
+                    <i class="icon-user-1"></i>
+                    تعداد نفرات؟
+                </label>
+                <div class="number">
+                      <span class="nafarat" >
+                        نفر
+                    </span>
+                    <input type="number" id="gueste"  class="count" min="0" max="10" value="0"  title="" autocomplete="off" readonly/>
+
+                        <div class="btn-group btn- count-product count">
+                        <button class="btn minus btn-minus down">
+                            <i class="icon-minus"></i>
+                        </button>
+                        <button class="btn plus btn-plus up">
+                            <i class="icon-plus"></i>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="go-next col-xl-1 col-md-2 col-3 pl-0 justify-content-lg-end">
+                <a href="#" class="icon-left-arrow"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0 d-flex flex-wrap justify-content-between">
+        <section class="side-grid side-grid-">
+            <div class="item-side tags-">
+             <span class="title">
+          ویژگی سفر
+        </span>
+                <div class="tags">
+                    <a href="#" class="tag active">
+                        جنگل
+                    </a>
+                    <a href="#" class="tag">
+                        نمادین
+                    </a>
+                    <a href="#" class="tag">
+                        مدرن
+                    </a>
+                    <a href="#" class="tag">
+                        دریا
+                    </a>
+                    <a href="#" class="tag active">
+                        آسیا
+                    </a>
+                    <a href="#" class="tag">
+                        معبد
+                    </a>
+                    <a href="#" class="tag">
+                        لوکس
+                    </a>
+                </div>
+            </div>
+            <div class="item-side price-">
+                <span class="title">
+                    بودجه
+                </span>
+                <div class="body-filter">
+                    <input class="range-slider-demo" type="hidden" value="5000"/>
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="price">
+                            <span id="high">$ 6500</span> <span id="low">$ 600</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-side rate-">
+                <span class="title">
+                    رتبه
+                </span>
+                <ul class="nav d-block">
+                    <li class="nav-item">
+                        <div class="check">
+
+                        </div>
+                        <div class="stars">
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item active-rate">
+                        <div class="check">
+
+                        </div>
+                        <div class="stars">
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full "></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="check">
+
+                        </div>
+                        <div class="stars">
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full "></i>
+                            <i class="icon-star-full "></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="check">
+
+                        </div>
+                        <div class="stars">
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full "></i>
+                            <i class="icon-star-full "></i>
+                            <i class="icon-star-full "></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="check">
+
+                        </div>
+                        <div class="stars">
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full "></i>
+                            <i class="icon-star-full "></i>
+                            <i class="icon-star-full "></i>
+                            <i class="icon-star-full "></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="more">
+                محدود کردن جستجو
+                <i class="icon-left-arrow icon"></i>
+            </a>
+        </section>
+        <section class="main-grid">
+            <div class="top-grid">
+                <div class="container p-0 d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="title-item">
+                        <h3 class="title">
+                            شهرها
+                        </h3>
+                        <span class="result">
+          نمایش 344 نتیجه
+      </span>
+                    </div>
+                    <div class="item-filter d-flex align-items-center">
+                        <div class="sort-item dark">
+          <span class="title">
+             مرنب سازی بر اساس :
+          </span>
+                            <select class="js-example-basic-single" id="states" name="state">
+                                <option>
+                                    پیشنهادات
+                                </option>
+                                <option>
+                                    پیشنهادات
+                                </option>
+                                <option>
+                                    پیشنهادات
+                                </option>
+                            </select>
+                        </div>
+                        <ul class="nav grid">
+                            <li class="category-button2 active-model"  data-filter="one">
+                                <i class="icon-grid"></i>
+                            </li>
+                            <li class="category-button2"  data-filter="two">
+                                <i class="icon-menu"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-grid">
+                <div class="filter-sec2 one ">
+                    <div class="container p-0 d-flex flex-wrap justify-content-between">
+                        <div class=" col-xl-4 col-md-6 col-12 ">
+                            <div class="item-grid">
+                                <div class="img-item">
+                                    <img src="assets/img/island.png" alt="">
+                                </div>
+                                <div class="content-item">
+                                    <div class="top-content">
+                                        <div class="title-item">
+                                            <h2 class="title">
+                                                جزیره کیش , ایران
+                                            </h2>
+                                            <h4 class="sub-title">
+                                                معبد جزیره با آب
+                                            </h4>
+                                        </div>
+                                        <div class="rate-item">
+                                            <div class="rate">
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full"></i>
+                                                <i class="icon-star-full"></i>
+                                            </div>
+                                            <span class="number">
+                            (23)
+                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" col-xl-4 col-md-6 col-12 ">
+                            <div class="item-grid">
+                                <div class="img-item">
+                                    <img src="assets/img/island.png" alt="">
+                                </div>
+                                <div class="content-item">
+                                    <div class="top-content">
+                                        <div class="title-item">
+                                            <h2 class="title">
+                                                جزیره کیش , ایران
+                                            </h2>
+                                            <h4 class="sub-title">
+                                                معبد جزیره با آب
+                                            </h4>
+                                        </div>
+                                        <div class="rate-item">
+                                            <div class="rate">
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full"></i>
+                                                <i class="icon-star-full"></i>
+                                            </div>
+                                            <span class="number">
+                            (23)
+                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" col-xl-4 col-md-6 col-12 ">
+                            <div class="item-grid">
+                                <div class="img-item">
+                                    <img src="assets/img/island.png" alt="">
+                                </div>
+                                <div class="content-item">
+                                    <div class="top-content">
+                                        <div class="title-item">
+                                            <h2 class="title">
+                                                جزیره کیش , ایران
+                                            </h2>
+                                            <h4 class="sub-title">
+                                                معبد جزیره با آب
+                                            </h4>
+                                        </div>
+                                        <div class="rate-item">
+                                            <div class="rate">
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full"></i>
+                                                <i class="icon-star-full"></i>
+                                            </div>
+                                            <span class="number">
+                            (23)
+                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" col-xl-4 col-md-6 col-12 ">
+                            <div class="item-grid">
+                                <div class="img-item">
+                                    <img src="assets/img/island.png" alt="">
+                                </div>
+                                <div class="content-item">
+                                    <div class="top-content">
+                                        <div class="title-item">
+                                            <h2 class="title">
+                                                جزیره کیش , ایران
+                                            </h2>
+                                            <h4 class="sub-title">
+                                                معبد جزیره با آب
+                                            </h4>
+                                        </div>
+                                        <div class="rate-item">
+                                            <div class="rate">
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full"></i>
+                                                <i class="icon-star-full"></i>
+                                            </div>
+                                            <span class="number">
+                            (23)
+                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" col-xl-4 col-md-6 col-12 ">
+                            <div class="item-grid">
+                                <div class="img-item">
+                                    <img src="assets/img/island.png" alt="">
+                                </div>
+                                <div class="content-item">
+                                    <div class="top-content">
+                                        <div class="title-item">
+                                            <h2 class="title">
+                                                جزیره کیش , ایران
+                                            </h2>
+                                            <h4 class="sub-title">
+                                                معبد جزیره با آب
+                                            </h4>
+                                        </div>
+                                        <div class="rate-item">
+                                            <div class="rate">
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full"></i>
+                                                <i class="icon-star-full"></i>
+                                            </div>
+                                            <span class="number">
+                            (23)
+                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" col-xl-4 col-md-6 col-12 ">
+                            <div class="item-grid">
+                                <div class="img-item">
+                                    <img src="assets/img/island.png" alt="">
+                                </div>
+                                <div class="content-item">
+                                    <div class="top-content">
+                                        <div class="title-item">
+                                            <h2 class="title">
+                                                جزیره کیش , ایران
+                                            </h2>
+                                            <h4 class="sub-title">
+                                                معبد جزیره با آب
+                                            </h4>
+                                        </div>
+                                        <div class="rate-item">
+                                            <div class="rate">
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full full"></i>
+                                                <i class="icon-star-full"></i>
+                                                <i class="icon-star-full"></i>
+                                            </div>
+                                            <span class="number">
+                            (23)
+                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-sec2 two">
+                    <div class="container p-0 d-flex flex-wrap justify-content-between">
+                        <div class="item-grid-2 col-12 p-0">
+                            <div class="container p-0 d-flex">
+                                <div class="img-item">
+                                    <img src="assets/img/tour.png" alt="">
+                                </div>
+                                <div class="content-item">
+                                    <div class="top-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div class="rate-item">
+                                                <div class="rate">
+                                                    <i class="icon-star-full full"></i>
+                                                    <i class="icon-star-full full"></i>
+                                                    <i class="icon-star-full full"></i>
+                                                    <i class="icon-star-full"></i>
+                                                    <i class="icon-star-full"></i>
+                                                </div>
+                                                <span class="number">
+                            (23)
+                    </span>
+                                            </div>
+                                            <button class="btn heart">
+                                                <i class="icon-heart"></i>
+                                            </button>
+                                        </div>
+                                        <div class="title-item">
+                                            <h2 class="title">
+                                                کیش ، ایران
+                                            </h2>
+                                            <h4 class="sub-title">
+                                                معبد جزیره با آب
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <p class="text">
+
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                    </p>
+                                    <div class="bottom-content d-flex align-items-center justify-content-between">
+                    <span class="recommend">
+                       ✓ &nbsp پیشنهادی
+                    </span>
+                                        <a href="#" class="more">
+                                            مشاهده جزییات
+                                            <i class="icon-left-arrow"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-grid-2 col-12 p-0">
+                            <div class="container p-0 d-flex">
+                                <div class="img-item">
+                                    <img src="assets/img/tour.png" alt="">
+                                </div>
+                                <div class="content-item">
+                                    <div class="top-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div class="rate-item">
+                                                <div class="rate">
+                                                    <i class="icon-star-full full"></i>
+                                                    <i class="icon-star-full full"></i>
+                                                    <i class="icon-star-full full"></i>
+                                                    <i class="icon-star-full"></i>
+                                                    <i class="icon-star-full"></i>
+                                                </div>
+                                                <span class="number">
+                            (23)
+                    </span>
+                                            </div>
+                                            <button class="btn heart">
+                                                <i class="icon-heart"></i>
+                                            </button>
+                                        </div>
+                                        <div class="title-item">
+                                            <h2 class="title">
+                                                کیش ، ایران
+                                            </h2>
+                                            <h4 class="sub-title">
+                                                معبد جزیره با آب
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <p class="text">
+
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                    </p>
+                                    <div class="bottom-content d-flex align-items-center justify-content-between">
+                    <span class="recommend">
+                       ✓ &nbsp پیشنهادی
+                    </span>
+                                        <a href="#" class="more">
+                                            مشاهده جزییات
+                                            <i class="icon-left-arrow"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-grid-2 col-12 p-0">
+                            <div class="container p-0 d-flex">
+                                <div class="img-item">
+                                    <img src="assets/img/tour.png" alt="">
+                                </div>
+                                <div class="content-item">
+                                    <div class="top-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div class="rate-item">
+                                                <div class="rate">
+                                                    <i class="icon-star-full full"></i>
+                                                    <i class="icon-star-full full"></i>
+                                                    <i class="icon-star-full full"></i>
+                                                    <i class="icon-star-full"></i>
+                                                    <i class="icon-star-full"></i>
+                                                </div>
+                                                <span class="number">
+                            (23)
+                    </span>
+                                            </div>
+                                            <button class="btn heart">
+                                                <i class="icon-heart"></i>
+                                            </button>
+                                        </div>
+                                        <div class="title-item">
+                                            <h2 class="title">
+                                                کیش ، ایران
+                                            </h2>
+                                            <h4 class="sub-title">
+                                                معبد جزیره با آب
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <p class="text">
+
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                    </p>
+                                    <div class="bottom-content d-flex align-items-center justify-content-between">
+                    <span class="recommend">
+                       ✓ &nbsp پیشنهادی
+                    </span>
+                                        <a href="#" class="more">
+                                            مشاهده جزییات
+                                            <i class="icon-left-arrow"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="container flex-wrap p-0 d-flex justify-content-center">
+                    <a href="#">
+                        <i class="icon-right-arrow"></i>
+                    </a>
+                    <a href="#">1</a>
+                    <a  href="#" class="active">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">
+                        <i class="icon-left-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<!--نمایش هدر فیکس در موبایل-->
+<div class="header-fix-mobile show-on-mobile-place grid-show ">
+    <div class="container p-0">
+        <div class="col-9 d-flex align-items-center p-0">
+            <div class="col-6 p-0">
+                <div class="logo">
+                    <img src="assets/img/logo-header.png" alt="">
+                </div>
+            </div>
+            <div class="col-6 p-0">
+                <button class="show-on-mobile btn">
+                    جستجو
+                    <i class="icon-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--نمایش فیلترها در موبایل-->
+<section class="side-grid side-other">
+    <div class="scroll-mobile">
+        <div class="close">
+            <i class="fa fa-times"></i>
+        </div>
+        <!--map-->
+        <div class="filter-sec2 one">
+            <!--همان هدر است برای ریسپانسیو -->
+            <div class="mobile-filter ">
+                <div class="location col-xl-4 col-md-3 col-12 p-0">
+                    <div class="item">
+                        <label for="location-1">
+                            <i class="icon-map-pin"></i>
+                            کجا؟
+                        </label>
+                        <input type="text" id="location-1" placeholder="هر جا">
+                    </div>
+                </div>
+                <div class="calender  col-xl-2 col-md-3 col-6 p-0">
+                    <div class="item">
+                        <label for="from">
+                            <i class="icon-calendar"></i>
+                            از تاریخ
+                        </label>
+                        <input class="range-from-examplee" id="from" autocomplete="off" placeholder="تاریخ رفت" />
+                    </div>
+                </div>
+                <div class="calender  col-xl-2 col-md-3 col-6 p-0">
+                    <div class="item">
+                        <label for="to1">
+                            <i class="icon-calendar"></i>
+                            تا تاریخ
+                        </label>
+                        <input class="range-to-examplee" id="to1" autocomplete="off" placeholder="تاریخ برگشت"/>
+                    </div>
+                </div>
+                <div class="guestse  col-xl-3 col-md-3 col-12 p-0">
+                    <label for="gueste">
+                        <i class="icon-user-1"></i>
+                        تعداد نفرات؟
+                    </label>
+                    <div class="number">
+                      <span class="nafarat" >
+                        نفر
+                    </span>
+                        <input type="number" id="gueste-"  class="count" min="0" max="10" value="0"  title="" autocomplete="off" readonly/>
+
+                        <div class="btn-group btn- count-product count">
+                            <button class="btn minus btn-minus down">
+                                <i class="icon-minus"></i>
+                            </button>
+                            <button class="btn plus btn-plus up">
+                                <i class="icon-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--filter-->
+        <div class="filter-sec2 two">
+            <div class="item-side tags-">
+             <span class="title">
+          ویژگی سفر
+        </span>
+                <div class="tags">
+                    <a href="#" class="tag active">
+                        جنگل
+                    </a>
+                    <a href="#" class="tag">
+                        نمادین
+                    </a>
+                    <a href="#" class="tag">
+                        مدرن
+                    </a>
+                    <a href="#" class="tag">
+                        دریا
+                    </a>
+                    <a href="#" class="tag active">
+                        آسیا
+                    </a>
+                    <a href="#" class="tag">
+                        معبد
+                    </a>
+                    <a href="#" class="tag">
+                        لوکس
+                    </a>
+                </div>
+            </div>
+            <div class="item-side price-">
+                <span class="title">
+                    بودجه
+                </span>
+                <div class="body-filter">
+                    <input class="range-slider-demo" type="hidden" value="5000"/>
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="price">
+                            <span id="high">$ 6500</span> <span id="low">$ 600</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-side rate-">
+                <span class="title">
+                    رتبه
+                </span>
+                <ul class="nav d-block">
+                    <li class="nav-item">
+                        <div class="check">
+
+                        </div>
+                        <div class="stars">
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item active-rate">
+                        <div class="check">
+
+                        </div>
+                        <div class="stars">
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full "></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="check">
+
+                        </div>
+                        <div class="stars">
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full "></i>
+                            <i class="icon-star-full "></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="check">
+
+                        </div>
+                        <div class="stars">
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full "></i>
+                            <i class="icon-star-full "></i>
+                            <i class="icon-star-full "></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="check">
+
+                        </div>
+                        <div class="stars">
+                            <i class="icon-star-full full"></i>
+                            <i class="icon-star-full "></i>
+                            <i class="icon-star-full "></i>
+                            <i class="icon-star-full "></i>
+                            <i class="icon-star-full "></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--btn filter-->
+        <div class="col-12 btns-group">
+            <div class="col-6 p-0">
+                <button class="btn-filter  category-button2" data-filter="one">
+                    <i class="icon-map-pin"></i>
+                    نقشه
+                </button>
+            </div>
+            <div class="col-6 p-0">
+                <button class="btn-filter  category-button2" data-filter="two">
+                    <i class="fa fa-filter"></i>
+                    فیلتر
+                </button>
+            </div>
+        </div>
+        <!--search-->
+        <a href="#" class="more">
+            محدود کردن جستجو
+            <i class="icon-left-arrow icon"></i>
+        </a>
+    </div>
+</section>
+<!--scroll-->
+<div class="scroll-top-fix container p-0">
+    <div class="scroll-fix">
+        <i class="fa fa-angle-up"></i>
+    </div>
+</div>
+</body>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.countdown.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.countdown.js"></script>
+<script src="assets/js/video/video.js"></script>
+<script src="assets/js/range/jquery.range-min.js"></script>
+<script src="assets/js/datepicker/persian-datepicker.js"></script>
+<script src="assets/js/datepicker/persian-date.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+    // CALENDER
+    var to, from;
+    to = $(".range-to-example").persianDatepicker({
+        autoClose: true,
+        format: 'YYYY/MM/DD',
+        // calendarType: 'gregorian',
+        initialValue: false,
+        "toolbox": {
+            "enabled": true,
+            "calendarSwitch": {
+                "enabled": false,
+                "format": "MMMM"
+            },
+            "todayButton": {
+                "enabled": false,
+                "text": {
+                    "fa": "امروز",
+                    "en": "Today"
+                }
+            },
+        },
+        responive:true,
+        altField: '.range-to-example-alt',
+        altFormat: 'LLLL',
+        onSelect: function (unix) {
+            to.touched = true;
+            if (from && from.options && from.options.maxDate != unix) {
+                var cachedValue = from.getState().selected.unixDate;
+                from.options = {maxDate: unix};
+                if (from.touched) {
+                    from.setDate(cachedValue);
+                }
+            }
+        }
+    });
+    from = $(".range-from-example").persianDatepicker({
+        autoClose: true,
+        format: 'YYYY/MM/DD',
+        // calendarType: 'gregorian',
+        initialValue: false,
+
+        "toolbox": {
+            "enabled": true,
+            "calendarSwitch": {
+                "enabled": false,
+                "format": "MMMM"
+            },
+            "todayButton": {
+                "enabled": false,
+                "text": {
+                    "fa": "امروز",
+                    "en": "Today"
+                }
+            },
+        },
+        responive:true,
+        altField: '.range-from-example-alt',
+        altFormat: 'LLLL',
+        onSelect: function (unix) {
+            from.touched = true;
+            if (to && to.options && to.options.minDate != unix) {
+                var cachedValue = to.getState().selected.unixDate;
+                to.options = {minDate: unix};
+                if (to.touched) {
+                    to.setDate(cachedValue);
+                }
+            }
+        }
+    });
+    var too, fromo;
+    too = $(".range-to-examplee").persianDatepicker({
+        autoClose: true,
+        format: 'YYYY/MM/DD',
+        // calendarType: 'gregorian',
+        initialValue: false,
+        "toolbox": {
+            "enabled": true,
+            "calendarSwitch": {
+                "enabled": false,
+                "format": "MMMM"
+            },
+            "todayButton": {
+                "enabled": false,
+                "text": {
+                    "fa": "امروز",
+                    "en": "Today"
+                }
+            }
+        },
+        responive:true,
+        altField: '.range-to-example-alt',
+        altFormat: 'LLLL',
+        onSelect: function (unix) {
+            too.touched = true;
+            if (fromo && fromo.options && fromo.options.maxDate != unix) {
+                var cachedValue = fromo.getState().selected.unixDate;
+                fromo.options = {maxDate: unix};
+                if (fromo.touched) {
+                    fromo.setDate(cachedValue);
+                }
+            }
+        }
+    });
+    fromo = $(".range-from-examplee").persianDatepicker({
+        autoClose: true,
+        format: 'YYYY/MM/DD',
+        // calendarType: 'gregorian',
+        initialValue: false,
+
+        "toolbox": {
+            "enabled": true,
+            "calendarSwitch": {
+                "enabled": false,
+                "format": "MMMM"
+            },
+            "todayButton": {
+                "enabled": false,
+                "text": {
+                    "fa": "امروز",
+                    "en": "Today"
+                }
+            }
+        },
+        responive:true,
+        altField: '.range-from-example-alt',
+        altFormat: 'LLLL',
+        onSelect: function (unix) {
+            from.touched = true;
+            if (too && to.options && too.options.minDate != unix) {
+                var cachedValue = too.getState().selected.unixDate;
+                too.options = {minDate: unix};
+                if (too.touched) {
+                    too.setDate(cachedValue);
+                }
+            }
+        }
+    });
+</script>
+</html>
